@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IUBAT_Pharmacy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Connectioin" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=dbPharmacyPOS;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=dbPharmacyPOS;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="Company" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IUBAT_Team_Black Oops_SoftwareDeveloper_LTD</Value>
+    </Setting>
+    <Setting Name="Address1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4 Embankment Drive Road, Sector-10 (Off Dhaka-Ashulia Road) Uttara Model Town, Dhaka-1230.Bangladesh
+</Value>
+    </Setting>
+    <Setting Name="Address2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">House : 78, Road : 12, Uttara1230,Daka
+Web : iubat.edu
+Developer : kaikobad.kaikobad326@gmail.com</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

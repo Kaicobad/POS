@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{716C81C5-541C-4820-A298-768412160792}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IUBAT_Pharmacy</RootNamespace>
+    <AssemblyName>IUBAT_Pharmacy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\clsCategory.cs" />
+    <Compile Include="DAL\clsCompany.cs" />
+    <Compile Include="DAL\clsDiscount.cs" />
+    <Compile Include="DAL\clsEmployee.cs" />
+    <Compile Include="DAL\clsGroup.cs" />
+    <Compile Include="DAL\clsMyBase.cs" />
+    <Compile Include="DAL\clsPaymentMethod.cs" />
+    <Compile Include="DAL\clsPower.cs" />
+    <Compile Include="DAL\clsProduct.cs" />
+    <Compile Include="DAL\clsPurchase.cs" />
+    <Compile Include="DAL\clsPurchaseDetails.cs" />
+    <Compile Include="DAL\clsRack.cs" />
+    <Compile Include="DAL\clsSale.cs" />
+    <Compile Include="DAL\clsSaleDetails.cs" />
+    <Compile Include="DAL\clsSaleStatus.cs" />
+    <Compile Include="DAL\clsUnit.cs" />
+    <Compile Include="Presentation\Common\FileImage.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Common\frmDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Common\frmDisplay.Designer.cs">
+      <DependentUpon>frmDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Common\frmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Common\frmNew.designer.cs">
+      <DependentUpon>frmNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Control\clsMyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentation\Control\Enums.cs" />
+    <Compile Include="Presentation\Control\ucCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Control\ucCombo.designer.cs">
+      <DependentUpon>ucCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Control\ucImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Control\ucImage.designer.cs">
+      <DependentUpon>ucImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Control\ucText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Control\ucText.designer.cs">
+      <DependentUpon>ucText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmCategoryNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCategoryNew.Designer.cs">
+      <DependentUpon>frmCategoryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCompany.Designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmCompanyNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmCompanyNew.Designer.cs">
+      <DependentUpon>frmCompanyNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmDiscount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmDiscount.Designer.cs">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmDiscountNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmDiscountNew.Designer.cs">
+      <DependentUpon>frmDiscountNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmEmployeeNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmEmployeeNew.Designer.cs">
+      <DependentUpon>frmEmployeeNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmGroup.Designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmGroupNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmGroupNew.Designer.cs">
+      <DependentUpon>frmGroupNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmPaymentMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmPaymentMethod.Designer.cs">
+      <DependentUpon>frmPaymentMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmPaymentMethodNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmPaymentMethodNew.Designer.cs">
+      <DependentUpon>frmPaymentMethodNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmPower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmPower.Designer.cs">
+      <DependentUpon>frmPower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmPowerNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmPowerNew.Designer.cs">
+      <DependentUpon>frmPowerNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmProductNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmProductNew.Designer.cs">
+      <DependentUpon>frmProductNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmRack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmRack.Designer.cs">
+      <DependentUpon>frmRack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmRackNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmRackNew.Designer.cs">
+      <DependentUpon>frmRackNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmSaleStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSaleStatus.Designer.cs">
+      <DependentUpon>frmSaleStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmSaleStatusNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmSaleStatusNew.Designer.cs">
+      <DependentUpon>frmSaleStatusNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\frmUnitNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\frmUnitNew.Designer.cs">
+      <DependentUpon>frmUnitNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Temp\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Common\frmDisplay.resx">
+      <DependentUpon>frmDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Common\frmNew.resx">
+      <DependentUpon>frmNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Control\ucCombo.resx">
+      <DependentUpon>ucCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Control\ucImage.resx">
+      <DependentUpon>ucImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Control\ucText.resx">
+      <DependentUpon>ucText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCategoryNew.resx">
+      <DependentUpon>frmCategoryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmCompanyNew.resx">
+      <DependentUpon>frmCompanyNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmDiscount.resx">
+      <DependentUpon>frmDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmDiscountNew.resx">
+      <DependentUpon>frmDiscountNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmEmployeeNew.resx">
+      <DependentUpon>frmEmployeeNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmGroup.resx">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmGroupNew.resx">
+      <DependentUpon>frmGroupNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmPaymentMethod.resx">
+      <DependentUpon>frmPaymentMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmPaymentMethodNew.resx">
+      <DependentUpon>frmPaymentMethodNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmPower.resx">
+      <DependentUpon>frmPower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmPowerNew.resx">
+      <DependentUpon>frmPowerNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmProduct.resx">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmProductNew.resx">
+      <DependentUpon>frmProductNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmRack.resx">
+      <DependentUpon>frmRack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmRackNew.resx">
+      <DependentUpon>frmRackNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSaleStatus.resx">
+      <DependentUpon>frmSaleStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmSaleStatusNew.resx">
+      <DependentUpon>frmSaleStatusNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\frmUnitNew.resx">
+      <DependentUpon>frmUnitNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptEmployee.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptProduct.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Presentation\Temp\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\Temp\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\Temp\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
