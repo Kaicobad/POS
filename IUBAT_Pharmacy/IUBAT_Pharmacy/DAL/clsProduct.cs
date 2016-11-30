@@ -71,10 +71,10 @@ namespace IUBAT_Pharmacy.DAL
 
         public bool SelectById()
         {
-            MyCommand = MyCommandBuilder("select name, code, groupId, powerId, companyId, categoryId, unitId, discountId, saleStatusId, listPrice, vat, remarks from product where Id = @id");
+            MyCommand = MyCommandBuilder("select id, name, code, groupId, powerId, companyId, categoryId, unitId, discountId, saleStatusId, listPrice, vat, remarks from product where Id = @id");
             MyCommand.Parameters.AddWithValue("@id", Id);
 
-            MyReader = MyCommand.ExecuteReader();
+            MyReader = ExecuteReader(MyCommand);
 
             while (MyReader.Read())
             {
@@ -99,50 +99,53 @@ namespace IUBAT_Pharmacy.DAL
         public System.Data.DataSet Select(string extra ="")
         {
             MyCommand = MyCommandBuilder(@"select p.id, p.name, p.code, gr.name as [group], pr.name as power, 
-                                            cp.name as company, ctg.name as category, u.primaryQty as unit, 
-                                            ds.name as discount, st.name as saleStatus, p.listPrice,
-                                            p.vat, p.remarks from product as p, [group] as gr, power as pr,
-                                            company as cp, category as ctg, unit as u, discount as ds,
-                                            saleStatus as st where p.groupId = gr.id and p.powerId = pr.id 
-                                            and p.companyId = cp.id and p.categoryId = ctg.id and p.unitId = u.id 
-                                            and p.discountId = ds.id and p.saleStatusId = st.id");
+                                        cp.name as company, ctg.name as category, u.primaryQty as unit, 
+                                        ds.persentage as discount, st.name as saleStatus, p.listPrice,
+                                        p.vat, p.remarks from product as p 
+                                        left join [group] as gr on p.groupId = gr.id 
+                                        left join power as pr on p.powerId = pr.id 
+                                        left join company as cp on p.companyId = cp.id 
+                                        left join category as ctg on p.categoryId = ctg.id
+                                        left join unit as u on p.unitId = u.id
+                                        left join discount as ds on p.discountId = ds.id
+                                        left join saleStatus as st on p.saleStatusId = st.id where p.id > 0");
 
             if (Name != "")
             {
                 MyCommand.CommandText += " and p.name like @search";
                 MyCommand.Parameters.AddWithValue("@search", "%" + Name + "%");
             }
-            else if (GroupId > 0)
+            if (GroupId > 0)
             {
                 MyCommand.CommandText += " and p.groupId = @groupId";
                 MyCommand.Parameters.AddWithValue("@groupId", GroupId);
             }
-            else if (PowerId > 0)
+            if (PowerId > 0)
             {
                 MyCommand.CommandText += " and p.powerId = @powerId";
                 MyCommand.Parameters.AddWithValue("@powerId", PowerId);
             }
-            else if (CompanyId > 0)
+            if (CompanyId > 0)
             {
                 MyCommand.CommandText += " and p.companyId = @companyId";
                 MyCommand.Parameters.AddWithValue("@companyId", CompanyId);
             }
-            else if (CategoryId > 0)
+            if (CategoryId > 0)
             {
                 MyCommand.CommandText += " and p.categoryId = @categoryId";
-                MyCommand.Parameters.AddWithValue("@companyId", CompanyId);
+                MyCommand.Parameters.AddWithValue("@categoryId", CategoryId);
             }
-            else if (UnitId > 0)
+            if (UnitId > 0)
             {
                 MyCommand.CommandText += " and p.unitId = @unitId";
                 MyCommand.Parameters.AddWithValue("@unitId", UnitId);
             }
-            else if (DiscountId > 0)
+            if (DiscountId > 0)
             {
                 MyCommand.CommandText += " and p.discountId = @discountId";
                 MyCommand.Parameters.AddWithValue("@discountId", DiscountId);
             }
-            else if (SaleStatusId > 0)
+            if (SaleStatusId > 0)
             {
                 MyCommand.CommandText += " and p.saleStatusId = @saleStatusId";
                 MyCommand.Parameters.AddWithValue("@saleStatusId", SaleStatusId);

@@ -77,7 +77,7 @@
             this.txtPersentage.txtRequired = false;
             this.txtPersentage.txtTextLabel = "Persentage";
             this.txtPersentage.txtTextValue = "";
-            this.txtPersentage.TxtType = TextType.Double;
+            this.txtPersentage.TxtType = TextType.Float;
             // 
             // frmDiscountNew
             // 

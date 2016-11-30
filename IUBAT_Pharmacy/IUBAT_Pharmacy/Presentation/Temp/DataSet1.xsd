@@ -7,12 +7,12 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Connectioin" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Connectioin (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IUBAT_Pharmacy.Properties.Settings.GlobalReference.Default.Connectioin" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VwProductTableAdapter" GeneratorDataComponentClassName="VwProductTableAdapter" Name="VwProduct" UserDataComponentName="VwProductTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwProductTableAdapter" GeneratorDataComponentClassName="vwProductTableAdapter" Name="vwProduct" UserDataComponentName="vwProductTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Connectioin (Settings)" DbObjectName="dbPharmacyPOS.dbo.VwProduct" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Connectioin (Settings)" DbObjectName="dbPharmacyPOS.dbo.vwProduct" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT id, name, code, [group], power, company, category, unit, discount, saleStatus, listPrice, vat, remarks FROM dbo.VwProduct</CommandText>
+                    <CommandText>SELECT id, name, code, [group], power, company, category, unit, discount, saleStatus, listPrice, vat, remarks FROM dbo.vwProduct</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -35,12 +35,12 @@
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VwEmployeeTableAdapter" GeneratorDataComponentClassName="VwEmployeeTableAdapter" Name="VwEmployee" UserDataComponentName="VwEmployeeTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwEmployeeTableAdapter" GeneratorDataComponentClassName="vwEmployeeTableAdapter" Name="vwEmployee" UserDataComponentName="vwEmployeeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="Connectioin (Settings)" DbObjectName="dbPharmacyPOS.dbo.VwEmployee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="Connectioin (Settings)" DbObjectName="dbPharmacyPOS.dbo.vwEmployee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT id, name, phone, email, password, type, image FROM dbo.VwEmployee</CommandText>
+                    <CommandText>SELECT id, name, phone, email, password, type, image FROM dbo.vwEmployee</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -65,7 +65,7 @@
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="VwProduct" msprop:Generator_TableClassName="VwProductDataTable" msprop:Generator_TableVarName="tableVwProduct" msprop:Generator_TablePropName="VwProduct" msprop:Generator_RowDeletingName="VwProductRowDeleting" msprop:Generator_RowChangingName="VwProductRowChanging" msprop:Generator_RowEvHandlerName="VwProductRowChangeEventHandler" msprop:Generator_RowDeletedName="VwProductRowDeleted" msprop:Generator_UserTableName="VwProduct" msprop:Generator_RowChangedName="VwProductRowChanged" msprop:Generator_RowEvArgName="VwProductRowChangeEvent" msprop:Generator_RowClassName="VwProductRow">
+        <xs:element name="vwProduct" msprop:Generator_TableClassName="vwProductDataTable" msprop:Generator_TableVarName="tablevwProduct" msprop:Generator_TablePropName="vwProduct" msprop:Generator_RowDeletingName="vwProductRowDeleting" msprop:Generator_RowChangingName="vwProductRowChanging" msprop:Generator_RowEvHandlerName="vwProductRowChangeEventHandler" msprop:Generator_RowDeletedName="vwProductRowDeleted" msprop:Generator_UserTableName="vwProduct" msprop:Generator_RowChangedName="vwProductRowChanged" msprop:Generator_RowEvArgName="vwProductRowChangeEvent" msprop:Generator_RowClassName="vwProductRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -83,28 +83,28 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="group" msprop:Generator_ColumnVarNameInTable="columngroup" msprop:Generator_ColumnPropNameInRow="group" msprop:Generator_ColumnPropNameInTable="groupColumn" msprop:Generator_UserColumnName="group">
+              <xs:element name="group" msprop:Generator_ColumnVarNameInTable="columngroup" msprop:Generator_ColumnPropNameInRow="group" msprop:Generator_ColumnPropNameInTable="groupColumn" msprop:Generator_UserColumnName="group" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="power" msprop:Generator_ColumnVarNameInTable="columnpower" msprop:Generator_ColumnPropNameInRow="power" msprop:Generator_ColumnPropNameInTable="powerColumn" msprop:Generator_UserColumnName="power">
+              <xs:element name="power" msprop:Generator_ColumnVarNameInTable="columnpower" msprop:Generator_ColumnPropNameInRow="power" msprop:Generator_ColumnPropNameInTable="powerColumn" msprop:Generator_UserColumnName="power" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="company" msprop:Generator_ColumnVarNameInTable="columncompany" msprop:Generator_ColumnPropNameInRow="company" msprop:Generator_ColumnPropNameInTable="companyColumn" msprop:Generator_UserColumnName="company">
+              <xs:element name="company" msprop:Generator_ColumnVarNameInTable="columncompany" msprop:Generator_ColumnPropNameInRow="company" msprop:Generator_ColumnPropNameInTable="companyColumn" msprop:Generator_UserColumnName="company" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category">
+              <xs:element name="category" msprop:Generator_ColumnVarNameInTable="columncategory" msprop:Generator_ColumnPropNameInRow="category" msprop:Generator_ColumnPropNameInTable="categoryColumn" msprop:Generator_UserColumnName="category" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -112,14 +112,8 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="unit" msprop:Generator_ColumnVarNameInTable="columnunit" msprop:Generator_ColumnPropNameInRow="unit" msprop:Generator_ColumnPropNameInTable="unitColumn" msprop:Generator_UserColumnName="unit" type="xs:int" minOccurs="0" />
-              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="200" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="saleStatus" msprop:Generator_ColumnVarNameInTable="columnsaleStatus" msprop:Generator_ColumnPropNameInRow="saleStatus" msprop:Generator_ColumnPropNameInTable="saleStatusColumn" msprop:Generator_UserColumnName="saleStatus">
+              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:double" minOccurs="0" />
+              <xs:element name="saleStatus" msprop:Generator_ColumnVarNameInTable="columnsaleStatus" msprop:Generator_ColumnPropNameInRow="saleStatus" msprop:Generator_ColumnPropNameInTable="saleStatusColumn" msprop:Generator_UserColumnName="saleStatus" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
@@ -138,7 +132,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="VwEmployee" msprop:Generator_TableClassName="VwEmployeeDataTable" msprop:Generator_TableVarName="tableVwEmployee" msprop:Generator_TablePropName="VwEmployee" msprop:Generator_RowDeletingName="VwEmployeeRowDeleting" msprop:Generator_RowChangingName="VwEmployeeRowChanging" msprop:Generator_RowEvHandlerName="VwEmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="VwEmployeeRowDeleted" msprop:Generator_UserTableName="VwEmployee" msprop:Generator_RowChangedName="VwEmployeeRowChanged" msprop:Generator_RowEvArgName="VwEmployeeRowChangeEvent" msprop:Generator_RowClassName="VwEmployeeRow">
+        <xs:element name="vwEmployee" msprop:Generator_TableClassName="vwEmployeeDataTable" msprop:Generator_TableVarName="tablevwEmployee" msprop:Generator_TablePropName="vwEmployee" msprop:Generator_RowDeletingName="vwEmployeeRowDeleting" msprop:Generator_RowChangingName="vwEmployeeRowChanging" msprop:Generator_RowEvHandlerName="vwEmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="vwEmployeeRowDeleted" msprop:Generator_UserTableName="vwEmployee" msprop:Generator_RowChangedName="vwEmployeeRowChanged" msprop:Generator_RowEvArgName="vwEmployeeRowChangeEvent" msprop:Generator_RowClassName="vwEmployeeRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -170,7 +164,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type" minOccurs="0">
+              <xs:element name="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_UserColumnName="type">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -184,11 +178,11 @@
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:VwProduct" />
+      <xs:selector xpath=".//mstns:vwProduct" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="VwEmployee_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:VwEmployee" />
+    <xs:unique name="vwEmployee_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwEmployee" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
   </xs:element>

@@ -31,7 +31,6 @@ namespace IUBAT_Pharmacy.Presentation
         private void btnPrint_Click(object sender, EventArgs e)
         {
             LoadReport("rptProduct", "Product Report", (DataTable)dgvData.DataSource);
-            
         }
     }
 }

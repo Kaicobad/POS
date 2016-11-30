@@ -1,7 +1,5 @@
 use master
 go
-drop database dbPharmacyPOS
-go
 create database dbPharmacyPOS
 go
 use dbPharmacyPOS
@@ -36,6 +34,8 @@ create table Category
 (
 Id int identity(1,1) primary key not null,
 Name varchar(100) not null,
+GroupId int,
+foreign key(GroupId) references [Group](Id),
 )
 
 create table Unit
@@ -49,14 +49,7 @@ PrimaryQty int
 create table Discount
 (
 Id int identity(1,1) primary key not null,
-Name varchar(200) not null,
-Persentage float not null
-)
-create table SaleStatus
-(
-Id int identity(1,1) primary key not null,
-Name varchar(200) not null,
-Description varchar(500) not null
+Status varchar(200) not null,
 )
 create table Product
 (
@@ -69,7 +62,6 @@ CompanyId int not null,
 CategoryId int not null,
 UnitId int not null,
 DiscountId int not null,
-SaleStatusId int not null,
 ListPrice float not null,
 Vat float not null, 
 Remarks varchar(500),
@@ -78,17 +70,24 @@ foreign key(PowerId) references Power(Id),
 foreign key(CompanyId) references Company(Id),
 foreign key(CategoryId) references Category(Id),
 foreign key(UnitId) references Unit(Id),
-foreign key(DiscountId) references Discount(Id),
-foreign key(SaleStatusId) references SaleStatus(Id) 
+foreign key(DiscountId) references Discount(Id)
 )
 
 create table Rack
 (
 ID int identity(1,1) primary key not null,
 Name varchar (200) not null,
-ProductId int not null,
+ProductId int,
 foreign key(ProductId) references Product(Id)
 )
+
+create table SaleStatus
+(
+Id int identity(1,1) primary key not null,
+Name varchar(200) not null,
+Description varchar(500) not null
+)
+
 
 create table Employee
 (
@@ -97,19 +96,18 @@ Name varchar(200) not null,
 Phone varchar(100) unique not null,
 Email varchar(100) unique not null,
 Password varchar(500) unique not null,
-Type varchar(100) not null,
-Image image
+Type varchar(100)
 )
 
 create table SaleDetails
 (
 Id int identity(1,1) primary key not null,
-ProductId int not null,
-DiscountId int not null,
+ProductId int,
 SerialNumber varchar(500) unique not null,
-Qty int not null,
-Rate float not null,
-Vat float not null,
+Qty int,
+Rate float,
+Vat float,
+DiscountId int,
 foreign key(ProductId) references Product(Id),
 foreign key(DiscountId) references Discount(Id)
 )
@@ -138,11 +136,11 @@ foreign key(PaymentMethodId) references PaymentMethod(Id)
 create table PurchaseDetails
 (
 Id int identity(1,1) primary key not null,
-ProductId int not null,
+ProductId int,
 Qty int,
 Rate float,
 Vat float,
-DiscountID int not null,
+DiscountID int,
 foreign key(ProductId) references Product(Id),
 foreign key(DiscountId) references Discount(Id)
 )
@@ -151,8 +149,8 @@ create table Purchase
 Id int identity(1,1) primary key not null,
 Number varchar(500) unique not null,
 DateTime datetime not null,
-EmployeeId int not null,
-PurchaseDetailsId int not null,
+EmployeeId int,
+PurchaseDetailsId int,
 foreign key(EmployeeId) references Employee(Id),
 foreign key(PurchaseDetailsId) references PurchaseDetails(Id)
 )

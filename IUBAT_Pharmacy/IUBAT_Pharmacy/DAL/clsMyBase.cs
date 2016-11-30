@@ -10,6 +10,7 @@ namespace IUBAT_Pharmacy.DAL
 {
     class clsMyBase
     {
+        public int Identity { get; set; }
 
         protected string _Error;
 
@@ -25,6 +26,9 @@ namespace IUBAT_Pharmacy.DAL
 
         protected bool Connection()
         {
+            if (MyReader != null && !MyReader.IsClosed)
+                MyReader.Close();
+
             if (cn.State == ConnectionState.Open)
                 return true;
             cn.ConnectionString = IUBAT_Pharmacy.Properties.Settings.Default.Connectioin;
@@ -44,6 +48,13 @@ namespace IUBAT_Pharmacy.DAL
 
         protected SqlDataReader MyReader;
 
+        protected SqlDataReader ExecuteReader(SqlCommand cmd)
+        {
+            if (Connection())
+                return cmd.ExecuteReader();
+            return null;
+        }
+
         protected SqlCommand MyCommandBuilder(string sql)
         {
             SqlCommand cmd = new SqlCommand();
@@ -59,6 +70,23 @@ namespace IUBAT_Pharmacy.DAL
             try
             {
                 cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                _Error = ex.Message;
+            }
+            return false;
+        }
+
+        protected bool ExecuteScaler(SqlCommand cmd)
+        {
+            if (!Connection())
+                return false;
+
+            try
+            {
+                Identity = Convert.ToInt32(cmd.ExecuteScalar());
                 return true;
             }
             catch (Exception ex)

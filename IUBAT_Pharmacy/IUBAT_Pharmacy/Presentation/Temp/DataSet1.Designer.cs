@@ -24,9 +24,9 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DataSet1 : global::System.Data.DataSet {
         
-        private VwProductDataTable tableVwProduct;
+        private vwProductDataTable tablevwProduct;
         
-        private VwEmployeeDataTable tableVwEmployee;
+        private vwEmployeeDataTable tablevwEmployee;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -56,11 +56,11 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["VwProduct"] != null)) {
-                    base.Tables.Add(new VwProductDataTable(ds.Tables["VwProduct"]));
+                if ((ds.Tables["vwProduct"] != null)) {
+                    base.Tables.Add(new vwProductDataTable(ds.Tables["vwProduct"]));
                 }
-                if ((ds.Tables["VwEmployee"] != null)) {
-                    base.Tables.Add(new VwEmployeeDataTable(ds.Tables["VwEmployee"]));
+                if ((ds.Tables["vwEmployee"] != null)) {
+                    base.Tables.Add(new vwEmployeeDataTable(ds.Tables["vwEmployee"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -84,9 +84,9 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public VwProductDataTable VwProduct {
+        public vwProductDataTable vwProduct {
             get {
-                return this.tableVwProduct;
+                return this.tablevwProduct;
             }
         }
         
@@ -94,9 +94,9 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public VwEmployeeDataTable VwEmployee {
+        public vwEmployeeDataTable vwEmployee {
             get {
-                return this.tableVwEmployee;
+                return this.tablevwEmployee;
             }
         }
         
@@ -167,11 +167,11 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["VwProduct"] != null)) {
-                    base.Tables.Add(new VwProductDataTable(ds.Tables["VwProduct"]));
+                if ((ds.Tables["vwProduct"] != null)) {
+                    base.Tables.Add(new vwProductDataTable(ds.Tables["vwProduct"]));
                 }
-                if ((ds.Tables["VwEmployee"] != null)) {
-                    base.Tables.Add(new VwEmployeeDataTable(ds.Tables["VwEmployee"]));
+                if ((ds.Tables["vwEmployee"] != null)) {
+                    base.Tables.Add(new vwEmployeeDataTable(ds.Tables["vwEmployee"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -206,16 +206,16 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableVwProduct = ((VwProductDataTable)(base.Tables["VwProduct"]));
+            this.tablevwProduct = ((vwProductDataTable)(base.Tables["vwProduct"]));
             if ((initTable == true)) {
-                if ((this.tableVwProduct != null)) {
-                    this.tableVwProduct.InitVars();
+                if ((this.tablevwProduct != null)) {
+                    this.tablevwProduct.InitVars();
                 }
             }
-            this.tableVwEmployee = ((VwEmployeeDataTable)(base.Tables["VwEmployee"]));
+            this.tablevwEmployee = ((vwEmployeeDataTable)(base.Tables["vwEmployee"]));
             if ((initTable == true)) {
-                if ((this.tableVwEmployee != null)) {
-                    this.tableVwEmployee.InitVars();
+                if ((this.tablevwEmployee != null)) {
+                    this.tablevwEmployee.InitVars();
                 }
             }
         }
@@ -228,21 +228,21 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableVwProduct = new VwProductDataTable();
-            base.Tables.Add(this.tableVwProduct);
-            this.tableVwEmployee = new VwEmployeeDataTable();
-            base.Tables.Add(this.tableVwEmployee);
+            this.tablevwProduct = new vwProductDataTable();
+            base.Tables.Add(this.tablevwProduct);
+            this.tablevwEmployee = new vwEmployeeDataTable();
+            base.Tables.Add(this.tablevwEmployee);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeVwProduct() {
+        private bool ShouldSerializevwProduct() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializeVwEmployee() {
+        private bool ShouldSerializevwEmployee() {
             return false;
         }
         
@@ -302,17 +302,17 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void VwProductRowChangeEventHandler(object sender, VwProductRowChangeEvent e);
+        public delegate void vwProductRowChangeEventHandler(object sender, vwProductRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void VwEmployeeRowChangeEventHandler(object sender, VwEmployeeRowChangeEvent e);
+        public delegate void vwEmployeeRowChangeEventHandler(object sender, vwEmployeeRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class VwProductDataTable : global::System.Data.TypedTableBase<VwProductRow> {
+        public partial class vwProductDataTable : global::System.Data.TypedTableBase<vwProductRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -342,8 +342,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductDataTable() {
-                this.TableName = "VwProduct";
+            public vwProductDataTable() {
+                this.TableName = "vwProduct";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -351,7 +351,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal VwProductDataTable(global::System.Data.DataTable table) {
+            internal vwProductDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -368,7 +368,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected VwProductDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected vwProductDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -488,34 +488,34 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRow this[int index] {
+            public vwProductRow this[int index] {
                 get {
-                    return ((VwProductRow)(this.Rows[index]));
+                    return ((vwProductRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwProductRowChangeEventHandler VwProductRowChanging;
+            public event vwProductRowChangeEventHandler vwProductRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwProductRowChangeEventHandler VwProductRowChanged;
+            public event vwProductRowChangeEventHandler vwProductRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwProductRowChangeEventHandler VwProductRowDeleting;
+            public event vwProductRowChangeEventHandler vwProductRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwProductRowChangeEventHandler VwProductRowDeleted;
+            public event vwProductRowChangeEventHandler vwProductRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddVwProductRow(VwProductRow row) {
+            public void AddvwProductRow(vwProductRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRow AddVwProductRow(int id, string name, string code, string group, string power, string company, string category, int unit, string discount, string saleStatus, double listPrice, double vat, string remarks) {
-                VwProductRow rowVwProductRow = ((VwProductRow)(this.NewRow()));
+            public vwProductRow AddvwProductRow(int id, string name, string code, string group, string power, string company, string category, int unit, double discount, string saleStatus, double listPrice, double vat, string remarks) {
+                vwProductRow rowvwProductRow = ((vwProductRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id,
                         name,
@@ -530,22 +530,22 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                         listPrice,
                         vat,
                         remarks};
-                rowVwProductRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVwProductRow);
-                return rowVwProductRow;
+                rowvwProductRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowvwProductRow);
+                return rowvwProductRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRow FindByid(int id) {
-                return ((VwProductRow)(this.Rows.Find(new object[] {
+            public vwProductRow FindByid(int id) {
+                return ((vwProductRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                VwProductDataTable cln = ((VwProductDataTable)(base.Clone()));
+                vwProductDataTable cln = ((vwProductDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -553,7 +553,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new VwProductDataTable();
+                return new vwProductDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -593,7 +593,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 base.Columns.Add(this.columncategory);
                 this.columnunit = new global::System.Data.DataColumn("unit", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnunit);
-                this.columndiscount = new global::System.Data.DataColumn("discount", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columndiscount = new global::System.Data.DataColumn("discount", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndiscount);
                 this.columnsaleStatus = new global::System.Data.DataColumn("saleStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsaleStatus);
@@ -611,17 +611,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 this.columnname.MaxLength = 200;
                 this.columncode.AllowDBNull = false;
                 this.columncode.MaxLength = 200;
-                this.columngroup.AllowDBNull = false;
                 this.columngroup.MaxLength = 200;
-                this.columnpower.AllowDBNull = false;
                 this.columnpower.MaxLength = 100;
-                this.columncompany.AllowDBNull = false;
                 this.columncompany.MaxLength = 200;
-                this.columncategory.AllowDBNull = false;
                 this.columncategory.MaxLength = 100;
-                this.columndiscount.AllowDBNull = false;
-                this.columndiscount.MaxLength = 200;
-                this.columnsaleStatus.AllowDBNull = false;
                 this.columnsaleStatus.MaxLength = 200;
                 this.columnlistPrice.AllowDBNull = false;
                 this.columnvat.AllowDBNull = false;
@@ -630,28 +623,28 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRow NewVwProductRow() {
-                return ((VwProductRow)(this.NewRow()));
+            public vwProductRow NewvwProductRow() {
+                return ((vwProductRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new VwProductRow(builder);
+                return new vwProductRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(VwProductRow);
+                return typeof(vwProductRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.VwProductRowChanged != null)) {
-                    this.VwProductRowChanged(this, new VwProductRowChangeEvent(((VwProductRow)(e.Row)), e.Action));
+                if ((this.vwProductRowChanged != null)) {
+                    this.vwProductRowChanged(this, new vwProductRowChangeEvent(((vwProductRow)(e.Row)), e.Action));
                 }
             }
             
@@ -659,8 +652,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.VwProductRowChanging != null)) {
-                    this.VwProductRowChanging(this, new VwProductRowChangeEvent(((VwProductRow)(e.Row)), e.Action));
+                if ((this.vwProductRowChanging != null)) {
+                    this.vwProductRowChanging(this, new vwProductRowChangeEvent(((vwProductRow)(e.Row)), e.Action));
                 }
             }
             
@@ -668,8 +661,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.VwProductRowDeleted != null)) {
-                    this.VwProductRowDeleted(this, new VwProductRowChangeEvent(((VwProductRow)(e.Row)), e.Action));
+                if ((this.vwProductRowDeleted != null)) {
+                    this.vwProductRowDeleted(this, new vwProductRowChangeEvent(((vwProductRow)(e.Row)), e.Action));
                 }
             }
             
@@ -677,14 +670,14 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.VwProductRowDeleting != null)) {
-                    this.VwProductRowDeleting(this, new VwProductRowChangeEvent(((VwProductRow)(e.Row)), e.Action));
+                if ((this.vwProductRowDeleting != null)) {
+                    this.vwProductRowDeleting(this, new vwProductRowChangeEvent(((vwProductRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveVwProductRow(VwProductRow row) {
+            public void RemovevwProductRow(vwProductRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -711,7 +704,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "VwProductDataTable";
+                attribute2.FixedValue = "vwProductDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -757,7 +750,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class VwEmployeeDataTable : global::System.Data.TypedTableBase<VwEmployeeRow> {
+        public partial class vwEmployeeDataTable : global::System.Data.TypedTableBase<vwEmployeeRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -775,8 +768,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeDataTable() {
-                this.TableName = "VwEmployee";
+            public vwEmployeeDataTable() {
+                this.TableName = "vwEmployee";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -784,7 +777,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal VwEmployeeDataTable(global::System.Data.DataTable table) {
+            internal vwEmployeeDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -801,7 +794,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected VwEmployeeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected vwEmployeeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -873,34 +866,34 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRow this[int index] {
+            public vwEmployeeRow this[int index] {
                 get {
-                    return ((VwEmployeeRow)(this.Rows[index]));
+                    return ((vwEmployeeRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwEmployeeRowChangeEventHandler VwEmployeeRowChanging;
+            public event vwEmployeeRowChangeEventHandler vwEmployeeRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwEmployeeRowChangeEventHandler VwEmployeeRowChanged;
+            public event vwEmployeeRowChangeEventHandler vwEmployeeRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwEmployeeRowChangeEventHandler VwEmployeeRowDeleting;
+            public event vwEmployeeRowChangeEventHandler vwEmployeeRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event VwEmployeeRowChangeEventHandler VwEmployeeRowDeleted;
+            public event vwEmployeeRowChangeEventHandler vwEmployeeRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void AddVwEmployeeRow(VwEmployeeRow row) {
+            public void AddvwEmployeeRow(vwEmployeeRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRow AddVwEmployeeRow(string name, string phone, string email, string password, string type, byte[] image) {
-                VwEmployeeRow rowVwEmployeeRow = ((VwEmployeeRow)(this.NewRow()));
+            public vwEmployeeRow AddvwEmployeeRow(string name, string phone, string email, string password, string type, byte[] image) {
+                vwEmployeeRow rowvwEmployeeRow = ((vwEmployeeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         name,
@@ -909,22 +902,22 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                         password,
                         type,
                         image};
-                rowVwEmployeeRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowVwEmployeeRow);
-                return rowVwEmployeeRow;
+                rowvwEmployeeRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowvwEmployeeRow);
+                return rowvwEmployeeRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRow FindByid(int id) {
-                return ((VwEmployeeRow)(this.Rows.Find(new object[] {
+            public vwEmployeeRow FindByid(int id) {
+                return ((vwEmployeeRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                VwEmployeeDataTable cln = ((VwEmployeeDataTable)(base.Clone()));
+                vwEmployeeDataTable cln = ((vwEmployeeDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -932,7 +925,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new VwEmployeeDataTable();
+                return new vwEmployeeDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -980,33 +973,34 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 this.columnemail.MaxLength = 100;
                 this.columnpassword.AllowDBNull = false;
                 this.columnpassword.MaxLength = 500;
+                this.columntype.AllowDBNull = false;
                 this.columntype.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRow NewVwEmployeeRow() {
-                return ((VwEmployeeRow)(this.NewRow()));
+            public vwEmployeeRow NewvwEmployeeRow() {
+                return ((vwEmployeeRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new VwEmployeeRow(builder);
+                return new vwEmployeeRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(VwEmployeeRow);
+                return typeof(vwEmployeeRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.VwEmployeeRowChanged != null)) {
-                    this.VwEmployeeRowChanged(this, new VwEmployeeRowChangeEvent(((VwEmployeeRow)(e.Row)), e.Action));
+                if ((this.vwEmployeeRowChanged != null)) {
+                    this.vwEmployeeRowChanged(this, new vwEmployeeRowChangeEvent(((vwEmployeeRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1014,8 +1008,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.VwEmployeeRowChanging != null)) {
-                    this.VwEmployeeRowChanging(this, new VwEmployeeRowChangeEvent(((VwEmployeeRow)(e.Row)), e.Action));
+                if ((this.vwEmployeeRowChanging != null)) {
+                    this.vwEmployeeRowChanging(this, new vwEmployeeRowChangeEvent(((vwEmployeeRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1023,8 +1017,8 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.VwEmployeeRowDeleted != null)) {
-                    this.VwEmployeeRowDeleted(this, new VwEmployeeRowChangeEvent(((VwEmployeeRow)(e.Row)), e.Action));
+                if ((this.vwEmployeeRowDeleted != null)) {
+                    this.vwEmployeeRowDeleted(this, new vwEmployeeRowChangeEvent(((vwEmployeeRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1032,14 +1026,14 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.VwEmployeeRowDeleting != null)) {
-                    this.VwEmployeeRowDeleting(this, new VwEmployeeRowChangeEvent(((VwEmployeeRow)(e.Row)), e.Action));
+                if ((this.vwEmployeeRowDeleting != null)) {
+                    this.vwEmployeeRowDeleting(this, new vwEmployeeRowChangeEvent(((vwEmployeeRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void RemoveVwEmployeeRow(VwEmployeeRow row) {
+            public void RemovevwEmployeeRow(vwEmployeeRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1066,7 +1060,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "VwEmployeeDataTable";
+                attribute2.FixedValue = "vwEmployeeDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1110,25 +1104,25 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class VwProductRow : global::System.Data.DataRow {
+        public partial class vwProductRow : global::System.Data.DataRow {
             
-            private VwProductDataTable tableVwProduct;
+            private vwProductDataTable tablevwProduct;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal VwProductRow(global::System.Data.DataRowBuilder rb) : 
+            internal vwProductRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVwProduct = ((VwProductDataTable)(this.Table));
+                this.tablevwProduct = ((vwProductDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tableVwProduct.idColumn]));
+                    return ((int)(this[this.tablevwProduct.idColumn]));
                 }
                 set {
-                    this[this.tableVwProduct.idColumn] = value;
+                    this[this.tablevwProduct.idColumn] = value;
                 }
             }
             
@@ -1136,10 +1130,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string name {
                 get {
-                    return ((string)(this[this.tableVwProduct.nameColumn]));
+                    return ((string)(this[this.tablevwProduct.nameColumn]));
                 }
                 set {
-                    this[this.tableVwProduct.nameColumn] = value;
+                    this[this.tablevwProduct.nameColumn] = value;
                 }
             }
             
@@ -1147,10 +1141,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string code {
                 get {
-                    return ((string)(this[this.tableVwProduct.codeColumn]));
+                    return ((string)(this[this.tablevwProduct.codeColumn]));
                 }
                 set {
-                    this[this.tableVwProduct.codeColumn] = value;
+                    this[this.tablevwProduct.codeColumn] = value;
                 }
             }
             
@@ -1158,10 +1152,15 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string group {
                 get {
-                    return ((string)(this[this.tableVwProduct.groupColumn]));
+                    try {
+                        return ((string)(this[this.tablevwProduct.groupColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'group\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.groupColumn] = value;
+                    this[this.tablevwProduct.groupColumn] = value;
                 }
             }
             
@@ -1169,10 +1168,15 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string power {
                 get {
-                    return ((string)(this[this.tableVwProduct.powerColumn]));
+                    try {
+                        return ((string)(this[this.tablevwProduct.powerColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'power\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.powerColumn] = value;
+                    this[this.tablevwProduct.powerColumn] = value;
                 }
             }
             
@@ -1180,10 +1184,15 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string company {
                 get {
-                    return ((string)(this[this.tableVwProduct.companyColumn]));
+                    try {
+                        return ((string)(this[this.tablevwProduct.companyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'company\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.companyColumn] = value;
+                    this[this.tablevwProduct.companyColumn] = value;
                 }
             }
             
@@ -1191,10 +1200,15 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string category {
                 get {
-                    return ((string)(this[this.tableVwProduct.categoryColumn]));
+                    try {
+                        return ((string)(this[this.tablevwProduct.categoryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'category\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.categoryColumn] = value;
+                    this[this.tablevwProduct.categoryColumn] = value;
                 }
             }
             
@@ -1203,25 +1217,30 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             public int unit {
                 get {
                     try {
-                        return ((int)(this[this.tableVwProduct.unitColumn]));
+                        return ((int)(this[this.tablevwProduct.unitColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'unit\' in table \'VwProduct\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'unit\' in table \'vwProduct\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVwProduct.unitColumn] = value;
+                    this[this.tablevwProduct.unitColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string discount {
+            public double discount {
                 get {
-                    return ((string)(this[this.tableVwProduct.discountColumn]));
+                    try {
+                        return ((double)(this[this.tablevwProduct.discountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'discount\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.discountColumn] = value;
+                    this[this.tablevwProduct.discountColumn] = value;
                 }
             }
             
@@ -1229,10 +1248,15 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string saleStatus {
                 get {
-                    return ((string)(this[this.tableVwProduct.saleStatusColumn]));
+                    try {
+                        return ((string)(this[this.tablevwProduct.saleStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'saleStatus\' in table \'vwProduct\' is DBNull.", e);
+                    }
                 }
                 set {
-                    this[this.tableVwProduct.saleStatusColumn] = value;
+                    this[this.tablevwProduct.saleStatusColumn] = value;
                 }
             }
             
@@ -1240,10 +1264,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double listPrice {
                 get {
-                    return ((double)(this[this.tableVwProduct.listPriceColumn]));
+                    return ((double)(this[this.tablevwProduct.listPriceColumn]));
                 }
                 set {
-                    this[this.tableVwProduct.listPriceColumn] = value;
+                    this[this.tablevwProduct.listPriceColumn] = value;
                 }
             }
             
@@ -1251,10 +1275,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public double vat {
                 get {
-                    return ((double)(this[this.tableVwProduct.vatColumn]));
+                    return ((double)(this[this.tablevwProduct.vatColumn]));
                 }
                 set {
-                    this[this.tableVwProduct.vatColumn] = value;
+                    this[this.tablevwProduct.vatColumn] = value;
                 }
             }
             
@@ -1263,64 +1287,136 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             public string remarks {
                 get {
                     try {
-                        return ((string)(this[this.tableVwProduct.remarksColumn]));
+                        return ((string)(this[this.tablevwProduct.remarksColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'remarks\' in table \'VwProduct\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'remarks\' in table \'vwProduct\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVwProduct.remarksColumn] = value;
+                    this[this.tablevwProduct.remarksColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsgroupNull() {
+                return this.IsNull(this.tablevwProduct.groupColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetgroupNull() {
+                this[this.tablevwProduct.groupColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IspowerNull() {
+                return this.IsNull(this.tablevwProduct.powerColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetpowerNull() {
+                this[this.tablevwProduct.powerColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IscompanyNull() {
+                return this.IsNull(this.tablevwProduct.companyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetcompanyNull() {
+                this[this.tablevwProduct.companyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IscategoryNull() {
+                return this.IsNull(this.tablevwProduct.categoryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetcategoryNull() {
+                this[this.tablevwProduct.categoryColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsunitNull() {
-                return this.IsNull(this.tableVwProduct.unitColumn);
+                return this.IsNull(this.tablevwProduct.unitColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetunitNull() {
-                this[this.tableVwProduct.unitColumn] = global::System.Convert.DBNull;
+                this[this.tablevwProduct.unitColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsdiscountNull() {
+                return this.IsNull(this.tablevwProduct.discountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetdiscountNull() {
+                this[this.tablevwProduct.discountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IssaleStatusNull() {
+                return this.IsNull(this.tablevwProduct.saleStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetsaleStatusNull() {
+                this[this.tablevwProduct.saleStatusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsremarksNull() {
-                return this.IsNull(this.tableVwProduct.remarksColumn);
+                return this.IsNull(this.tablevwProduct.remarksColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetremarksNull() {
-                this[this.tableVwProduct.remarksColumn] = global::System.Convert.DBNull;
+                this[this.tablevwProduct.remarksColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class VwEmployeeRow : global::System.Data.DataRow {
+        public partial class vwEmployeeRow : global::System.Data.DataRow {
             
-            private VwEmployeeDataTable tableVwEmployee;
+            private vwEmployeeDataTable tablevwEmployee;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal VwEmployeeRow(global::System.Data.DataRowBuilder rb) : 
+            internal vwEmployeeRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableVwEmployee = ((VwEmployeeDataTable)(this.Table));
+                this.tablevwEmployee = ((vwEmployeeDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tableVwEmployee.idColumn]));
+                    return ((int)(this[this.tablevwEmployee.idColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.idColumn] = value;
+                    this[this.tablevwEmployee.idColumn] = value;
                 }
             }
             
@@ -1328,10 +1424,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string name {
                 get {
-                    return ((string)(this[this.tableVwEmployee.nameColumn]));
+                    return ((string)(this[this.tablevwEmployee.nameColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.nameColumn] = value;
+                    this[this.tablevwEmployee.nameColumn] = value;
                 }
             }
             
@@ -1339,10 +1435,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string phone {
                 get {
-                    return ((string)(this[this.tableVwEmployee.phoneColumn]));
+                    return ((string)(this[this.tablevwEmployee.phoneColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.phoneColumn] = value;
+                    this[this.tablevwEmployee.phoneColumn] = value;
                 }
             }
             
@@ -1350,10 +1446,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string email {
                 get {
-                    return ((string)(this[this.tableVwEmployee.emailColumn]));
+                    return ((string)(this[this.tablevwEmployee.emailColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.emailColumn] = value;
+                    this[this.tablevwEmployee.emailColumn] = value;
                 }
             }
             
@@ -1361,10 +1457,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string password {
                 get {
-                    return ((string)(this[this.tableVwEmployee.passwordColumn]));
+                    return ((string)(this[this.tablevwEmployee.passwordColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.passwordColumn] = value;
+                    this[this.tablevwEmployee.passwordColumn] = value;
                 }
             }
             
@@ -1372,15 +1468,10 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string type {
                 get {
-                    try {
-                        return ((string)(this[this.tableVwEmployee.typeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'type\' in table \'VwEmployee\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tablevwEmployee.typeColumn]));
                 }
                 set {
-                    this[this.tableVwEmployee.typeColumn] = value;
+                    this[this.tablevwEmployee.typeColumn] = value;
                 }
             }
             
@@ -1389,39 +1480,27 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
             public byte[] image {
                 get {
                     try {
-                        return ((byte[])(this[this.tableVwEmployee.imageColumn]));
+                        return ((byte[])(this[this.tablevwEmployee.imageColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'image\' in table \'VwEmployee\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'image\' in table \'vwEmployee\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableVwEmployee.imageColumn] = value;
+                    this[this.tablevwEmployee.imageColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IstypeNull() {
-                return this.IsNull(this.tableVwEmployee.typeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SettypeNull() {
-                this[this.tableVwEmployee.typeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsimageNull() {
-                return this.IsNull(this.tableVwEmployee.imageColumn);
+                return this.IsNull(this.tablevwEmployee.imageColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetimageNull() {
-                this[this.tableVwEmployee.imageColumn] = global::System.Convert.DBNull;
+                this[this.tablevwEmployee.imageColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1429,22 +1508,22 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class VwProductRowChangeEvent : global::System.EventArgs {
+        public class vwProductRowChangeEvent : global::System.EventArgs {
             
-            private VwProductRow eventRow;
+            private vwProductRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRowChangeEvent(VwProductRow row, global::System.Data.DataRowAction action) {
+            public vwProductRowChangeEvent(vwProductRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwProductRow Row {
+            public vwProductRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1463,22 +1542,22 @@ namespace IUBAT_Pharmacy.Presentation.Temp {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class VwEmployeeRowChangeEvent : global::System.EventArgs {
+        public class vwEmployeeRowChangeEvent : global::System.EventArgs {
             
-            private VwEmployeeRow eventRow;
+            private vwEmployeeRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRowChangeEvent(VwEmployeeRow row, global::System.Data.DataRowAction action) {
+            public vwEmployeeRowChangeEvent(vwEmployeeRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public VwEmployeeRow Row {
+            public vwEmployeeRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1506,7 +1585,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class VwProductTableAdapter : global::System.ComponentModel.Component {
+    public partial class vwProductTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1520,7 +1599,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public VwProductTableAdapter() {
+        public vwProductTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1617,7 +1696,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "VwProduct";
+            tableMapping.DataSetTable = "vwProduct";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("name", "name");
             tableMapping.ColumnMappings.Add("code", "code");
@@ -1648,7 +1727,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, name, code, [group], power, company, category, unit, discount, saleSta" +
-                "tus, listPrice, vat, remarks FROM dbo.VwProduct";
+                "tus, listPrice, vat, remarks FROM dbo.vwProduct";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1656,7 +1735,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.VwProductDataTable dataTable) {
+        public virtual int Fill(DataSet1.vwProductDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1669,9 +1748,9 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.VwProductDataTable GetData() {
+        public virtual DataSet1.vwProductDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.VwProductDataTable dataTable = new DataSet1.VwProductDataTable();
+            DataSet1.vwProductDataTable dataTable = new DataSet1.vwProductDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1686,7 +1765,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class VwEmployeeTableAdapter : global::System.ComponentModel.Component {
+    public partial class vwEmployeeTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1700,7 +1779,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public VwEmployeeTableAdapter() {
+        public vwEmployeeTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1797,7 +1876,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "VwEmployee";
+            tableMapping.DataSetTable = "vwEmployee";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("name", "name");
             tableMapping.ColumnMappings.Add("phone", "phone");
@@ -1821,7 +1900,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT id, name, phone, email, password, type, image FROM dbo.VwEmployee";
+            this._commandCollection[0].CommandText = "SELECT id, name, phone, email, password, type, image FROM dbo.vwEmployee";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1829,7 +1908,7 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DataSet1.VwEmployeeDataTable dataTable) {
+        public virtual int Fill(DataSet1.vwEmployeeDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1842,9 +1921,9 @@ namespace IUBAT_Pharmacy.Presentation.Temp.DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DataSet1.VwEmployeeDataTable GetData() {
+        public virtual DataSet1.vwEmployeeDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DataSet1.VwEmployeeDataTable dataTable = new DataSet1.VwEmployeeDataTable();
+            DataSet1.vwEmployeeDataTable dataTable = new DataSet1.vwEmployeeDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

@@ -157,7 +157,7 @@
             this.cmbDiscountId.Name = "cmbDiscountId";
             this.cmbDiscountId.Size = new System.Drawing.Size(327, 35);
             this.cmbDiscountId.TabIndex = 7;
-            this.cmbDiscountId.txtRequired = true;
+            this.cmbDiscountId.txtRequired = false;
             this.cmbDiscountId.txtTextLabel = "Discount";
             this.cmbDiscountId.txtTextValueInt = 0;
             // 

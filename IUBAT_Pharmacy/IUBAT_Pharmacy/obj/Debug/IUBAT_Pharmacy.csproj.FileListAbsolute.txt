@@ -12,7 +12,6 @@ D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presen
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.Common.frmNew.resources
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.MyControls.ucText.resources
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmGroupNew.resources
-D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.csprojResolveAssemblyReference.cache
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmPower.resources
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmPowerNew.resources
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmCompany.resources
@@ -71,3 +70,6 @@ D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\RdlCompile.cache
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\RdlCompile.compiled
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\bin\Debug\Reports\rptProduct.rdlc
 D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\bin\Debug\Reports\rptEmployee.rdlc
+D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmPurchase.resources
+D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.Presentation.frmPurchaseNew.resources
+D:\ProjectPharmacy\IUBAT_Pharmacy\IUBAT_Pharmacy\obj\Debug\IUBAT_Pharmacy.csprojResolveAssemblyReference.cache

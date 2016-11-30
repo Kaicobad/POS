@@ -17,7 +17,7 @@ namespace IUBAT_Pharmacy.Presentation
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            DAL.clsProduct p = new DAL.clsProduct();
+            DAL.clsProduct pd = new DAL.clsProduct();
 
             int er = 0;
 
@@ -28,26 +28,27 @@ namespace IUBAT_Pharmacy.Presentation
             er += cmbCategoryId.txtValidate();
             er += cmbUnitId.txtValidate();
             er += cmbUnitId.txtValidate();
+            er += cmbDiscountId.txtValidate();
             er += cmbSaleStatusId.txtValidate();
             er += txtListPrice.txtValidate();
             er += txtVat.txtValidate();
 
             if (er == 0)
             {
-                p.Name = txtName.txtTextValue;
-                p.Code = txtCode.txtTextValue;
-                p.GroupId = cmbGroupId.txtTextValueInt;
-                p.PowerId = cmbPowerId.txtTextValueInt;
-                p.CompanyId = cmbCompanyId.txtTextValueInt;
-                p.CategoryId = cmbCategoryId.txtTextValueInt;
-                p.UnitId = cmbUnitId.txtTextValueInt;
-                p.DiscountId = cmbUnitId.txtTextValueInt;
-                p.SaleStatusId = cmbSaleStatusId.txtTextValueInt;
-                p.ListPrice = txtListPrice.txtDoubleValue;
-                p.Vat = txtVat.txtDoubleValue;
-                p.Remarks = txtRemarks.txtTextValue;
+                pd.Name = txtName.txtTextValue;
+                pd.Code = txtCode.txtTextValue;
+                pd.GroupId = cmbGroupId.txtTextValueInt;
+                pd.PowerId = cmbPowerId.txtTextValueInt;
+                pd.CompanyId = cmbCompanyId.txtTextValueInt;
+                pd.CategoryId = cmbCategoryId.txtTextValueInt;
+                pd.UnitId = cmbUnitId.txtTextValueInt;
+                pd.DiscountId = cmbDiscountId.txtTextValueInt;
+                pd.SaleStatusId = cmbSaleStatusId.txtTextValueInt;
+                pd.ListPrice = txtListPrice.txtDoubleValue;
+                pd.Vat = txtVat.txtDoubleValue;
+                pd.Remarks = txtRemarks.txtTextValue;
 
-                if (p.Insert())
+                if (pd.Insert())
                 {
                     MessageBox.Show("New Product Inserted !!");
                     txtName.txtTextValue = "";
@@ -66,7 +67,7 @@ namespace IUBAT_Pharmacy.Presentation
                 }
                 else
                 {
-                    MessageBox.Show(p.Error);
+                    MessageBox.Show(pd.Error);
                 }
             }
         }

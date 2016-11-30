@@ -40,6 +40,8 @@
             this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paymentMethodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.referencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.companyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,8 +53,6 @@
             this.SaleStatus_toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.unitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,8 +63,9 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsBtnLogin = new System.Windows.Forms.ToolStripButton();
             this.tNowTime = new System.Windows.Forms.Timer(this.components);
-            this.paymentMethodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -76,6 +77,7 @@
             this.fileToolStripMenuItem,
             this.userToolStripMenuItem,
             this.referencesToolStripMenuItem,
+            this.transactionToolStripMenuItem,
             this.settingsToolStripMenuItem,
             this.reportToolStripMenuItem,
             this.aboutToolStripMenuItem});
@@ -150,6 +152,18 @@
             this.employeeToolStripMenuItem.Text = "&Employee";
             this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
+            // paymentMethodToolStripMenuItem
+            // 
+            this.paymentMethodToolStripMenuItem.Name = "paymentMethodToolStripMenuItem";
+            this.paymentMethodToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.paymentMethodToolStripMenuItem.Text = "&PaymentMethod";
+            this.paymentMethodToolStripMenuItem.Click += new System.EventHandler(this.paymentMethodToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(160, 6);
+            // 
             // referencesToolStripMenuItem
             // 
             this.referencesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -163,8 +177,6 @@
             this.SaleStatus_toolStripMenuItem2,
             this.unitToolStripMenuItem,
             this.toolStripSeparator2,
-            this.purchaseToolStripMenuItem,
-            this.saleToolStripMenuItem,
             this.toolStripSeparator3});
             this.referencesToolStripMenuItem.Name = "referencesToolStripMenuItem";
             this.referencesToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
@@ -238,18 +250,6 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
-            // purchaseToolStripMenuItem
-            // 
-            this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
-            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.purchaseToolStripMenuItem.Text = "&Purchase";
-            // 
-            // saleToolStripMenuItem
-            // 
-            this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
-            this.saleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saleToolStripMenuItem.Text = "&Sale";
-            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
@@ -322,17 +322,27 @@
             this.tNowTime.Interval = 1000;
             this.tNowTime.Tick += new System.EventHandler(this.tNowTime_Tick);
             // 
-            // paymentMethodToolStripMenuItem
+            // transactionToolStripMenuItem
             // 
-            this.paymentMethodToolStripMenuItem.Name = "paymentMethodToolStripMenuItem";
-            this.paymentMethodToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.paymentMethodToolStripMenuItem.Text = "&PaymentMethod";
-            this.paymentMethodToolStripMenuItem.Click += new System.EventHandler(this.paymentMethodToolStripMenuItem_Click);
+            this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.purchaseToolStripMenuItem,
+            this.saleToolStripMenuItem});
+            this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
+            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.transactionToolStripMenuItem.Text = "&Transaction";
             // 
-            // toolStripSeparator1
+            // purchaseToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(160, 6);
+            this.purchaseToolStripMenuItem.Name = "purchaseToolStripMenuItem";
+            this.purchaseToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.purchaseToolStripMenuItem.Text = "&Purchase";
+            this.purchaseToolStripMenuItem.Click += new System.EventHandler(this.purchaseToolStripMenuItem_Click_1);
+            // 
+            // saleToolStripMenuItem
+            // 
+            this.saleToolStripMenuItem.Name = "saleToolStripMenuItem";
+            this.saleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saleToolStripMenuItem.Text = "&Sale";
             // 
             // frmMain
             // 
@@ -384,8 +394,6 @@
         private System.Windows.Forms.ToolStripMenuItem rackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unitToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem purchaseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saleToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem1;
@@ -396,6 +404,9 @@
         private System.Windows.Forms.ToolStripMenuItem SaleStatus_toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem paymentMethodToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem transactionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem purchaseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saleToolStripMenuItem;
     }
 }
 

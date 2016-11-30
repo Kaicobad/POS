@@ -36,7 +36,6 @@ namespace IUBAT_Pharmacy.DAL
             MyCommand.Parameters.AddWithValue("@qty", Qty);
             MyCommand.Parameters.AddWithValue("@rate", Rate);
             MyCommand.Parameters.AddWithValue("@vat", Vat);
-
             return ExecuteNonQuery(MyCommand);
         }
 
@@ -50,10 +49,10 @@ namespace IUBAT_Pharmacy.DAL
 
         public bool SelectById()
         {
-            MyCommand = MyCommandBuilder("select productId, discountId, qty, rate, vat from purchaseDetails where Id = @id");
+            MyCommand = MyCommandBuilder("select productId, discountId, qty, rate, vatfrom purchaseDetails where Id = @id");
             MyCommand.Parameters.AddWithValue("@id", Id);
 
-            MyReader = MyCommand.ExecuteReader();
+            MyReader = ExecuteReader(MyCommand);
 
             while (MyReader.Read())
             {
@@ -68,9 +67,21 @@ namespace IUBAT_Pharmacy.DAL
             return false;
         }
 
-        public System.Data.DataSet Select()
+        public System.Data.DataSet Select( string extra = "")
         {
-            return ExecuteDataSet("select  id, productId, discountId, qty, rate, vat from purchaseDetails");
+            MyCommand = MyCommandBuilder(@"select prc.id, p.name product, prc.qty, prc.rate,
+                                        prc.vat, ds.persentage as discount from PurchaseDetails as prc left join product as p 
+                                        on prc.productId = p.id left join discount as ds on prc.discountId = ds.id where prc.id > 0");
+
+            if (ProductId > 0 )
+            {
+                MyCommand.CommandText += " and p.productId = @productId";
+                MyCommand.Parameters.AddWithValue("@productId", ProductId);
+            }
+
+            MyCommand.CommandText += extra;
+
+            return ExecuteDataSet(MyCommand);
         }
     }
 }

@@ -23,6 +23,7 @@ namespace IUBAT_Pharmacy
         Presentation.frmRack rc = new Presentation.frmRack();
         Presentation.frmEmployee em = new Presentation.frmEmployee();
         Presentation.frmPaymentMethod pm = new Presentation.frmPaymentMethod();
+        Presentation.frmPurchase prch = new Presentation.frmPurchase();
 
         public frmMain()
         {
@@ -157,6 +158,17 @@ namespace IUBAT_Pharmacy
             if (pm.IsDisposed)
             {
                 pm = new Presentation.frmPaymentMethod();
+            }
+        }
+
+        private void purchaseToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            prch.Show();
+            prch.MdiParent = this;
+            prch.BringToFront();
+            if (prch.IsDisposed)
+            {
+                prch = new Presentation.frmPurchase();
             }
         }
     }

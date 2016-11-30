@@ -28,6 +28,18 @@ namespace IUBAT_Pharmacy.Presentation.MyControls
             }
         }
 
+        public String txtComboText
+        {
+            get
+            {
+                return cmbCombo.Text;
+            }
+            set
+            {
+                cmbCombo.Text = value;
+            }
+        }
+
         public int txtTextValueInt
         {
             get
@@ -65,6 +77,7 @@ namespace IUBAT_Pharmacy.Presentation.MyControls
             cmbCombo.ValueMember = value;
             cmbCombo.SelectedValue = -1;
         }
+
 
 
         public ucCombo()
